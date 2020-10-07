@@ -57,9 +57,9 @@ function addToCartClicked(event) {
   var shopItem = button.parentElement.parentElement
   var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
   var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
-  var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+  var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src 
   addItemToCart(title, price, imageSrc)
-  alert('Item added to cart') 
+ 
   updateCartTotal()
 }
 
@@ -85,8 +85,8 @@ function addItemToCart(title, price, imageSrc) {
           <input class="cart-quantity-input" type="number" value="1">
           <button class="btn btn-danger" type="button">REMOVE</button>
       </div>`
-     
-  cartRow.innerHTML = cartRowContents
+      alert('Item added to cart')
+  cartRow.innerHTML = cartRowContents 
   cartItems.append(cartRow)
   cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
   cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
