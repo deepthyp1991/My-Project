@@ -132,8 +132,8 @@ window.onload= function filterItems(e)
     if(itemName.toLocaleLowerCase().indexOf(text)!= -1){
       item.style.display = 'block'
     }else{
-      item.style.display = 'none'
-      
+     item.style.display = 'none'
+     
     }
   })
  
