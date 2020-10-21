@@ -113,17 +113,14 @@ function updateCartTotal() {
 window.onload= function filterItems(e)
 {
   var filter = document.getElementById('filter');
-   
   filter.addEventListener('keyup', filterItems);
   var text = e.target.value.toLowerCase();
   // console.log(text);   
-
   function filterItems(e){
     var text = e.target.value.toLowerCase();
      console.log(text); 
     var shopItemTitle = document.querySelectorAll('shop-item-title');
     // console.log(shopItemTitle);
-
   var shopItemList = document.getElementsByClassName('shop-item-title')
   // console.log(shopItemList)
   Array.from(shopItemList).forEach(function(item){
