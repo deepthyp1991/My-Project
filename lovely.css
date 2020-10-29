@@ -105,6 +105,12 @@ width: 400px;
 padding: 1em;
 border: 1px solid #CCC;
 border-radius: 1em;
+background: rgba(0,0,0,0.8);
+color: white;
+top: 30%;
+position: absolute;
+margin-left: 550px;
+
 }
 ul 
 { 
@@ -134,9 +140,9 @@ textarea{
 vertical-align: top;
 height: 5em;
 }
-/* .div{
-padding-left: 130px;
-} */
+.div{
+padding-left: 90px;
+}
 .buttonsubmit{
 text-align: center;
 }

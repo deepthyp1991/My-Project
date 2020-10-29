@@ -4,11 +4,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css"
    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
     crossorigin="anonymous">
-  <header class="header-contactus"></header>
- 
-  
+    <script src = 'form.js'></script>
+  <header>
+    <a href="index.html"><h3><i>Lovely's Cake</i></h3></a>
+    <div class="topnav"> 
+        </div>
+</header>
   <head>
-<form action="/action_page.php" method="post">
+<form id= 'myForm' action="/action_page.php" method="post" autocomplete="on" onsubmit="submitForm()">
   <ul>
    <li>
      <label for="name">Name:</label>
@@ -16,11 +19,11 @@
    </li>
    <li>
      <label for="phno">Phone No.</label>
-     <input type="tel" id="phno" name="phone_number">
+     <input type="tel" id="phno" name="phone_number" required>
    </li>
    <li>
      <label for="mail">E-mail:</label>
-     <input type="email" id="mail" name="user_email">
+     <input type="email" id="mail" name="user_email" required>
    </li>
    <li>
      <label for="cakes"> Choose your cake:</label>
@@ -37,9 +40,8 @@
      <textarea id="msg" name="user_message"></textarea>
    </li>
    <li class="div">
-    <!-- <button type="submit" onclick="alert('Message Submitted')">Send your message</button> -->
-    <button class="btn btn-primary" type="submit" onclick="alert('Message Submitted')">Submit</button>
-  </li>
+    <button class="btn btn-primary" type="submit" >Submit</button>
+   </li>
   </ul>
 
  </form>
